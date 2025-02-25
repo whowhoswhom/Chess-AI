@@ -1,0 +1,13 @@
+📦 chess-game
+ ┣ 📂 assets/              # Images & sounds
+ ┣ 📜 board.py            # Manages the board state
+ ┣ 📜 piece.py            # Defines chess piece logic
+ ┣ 📜 move.py             # Handles movement logic
+ ┣ 📜 game.py             # Main game logic
+ ┣ 📜 main.py             # Entry point of the program
+ ┣ 📜 dragger.py          # Handles piece dragging
+ ┣ 📜 square.py           # Square logic
+ ┣ 📜 theme.py            # Board themes
+ ┣ 📜 sound.py            # Sound management
+ ┣ 📜 README.md           # Project documentation
+ ┗ 📜 const.py            # Constants for board size, etc.
