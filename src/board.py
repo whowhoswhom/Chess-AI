@@ -125,6 +125,8 @@ class Board:
         '''
             Calculate all the possible (valid) moves of an specific piece on a specific position
         '''
+        # always start with a clean move list to avoid outdated entries
+        piece.clear_moves()
 
         def pawn_moves():
             # steps
