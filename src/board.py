@@ -184,7 +184,7 @@ class Board:
             # en passant moves
             r = 3 if piece.color == 'white' else 4
             fr = 2 if piece.color == 'white' else 5
-            # left en pessant
+            # left en passant
             if Square.in_range(col - 1) and row == r:
                 if self.squares[row][col - 1].has_enemy_piece(piece.color):
                     p = self.squares[row][col - 1].piece
@@ -205,7 +205,7 @@ class Board:
                                 # append new move
                                 piece.add_move(move)
 
-            # right en pessant
+            # right en passant
             if Square.in_range(col + 1) and row == r:
                 if self.squares[row][col + 1].has_enemy_piece(piece.color):
                     p = self.squares[row][col + 1].piece
