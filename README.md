@@ -17,3 +17,12 @@ Make sure you have **Python 3.x** installed on your system. You also need to ins
 
 ```bash
 pip install pygame
+```
+
+### **Running the Game**
+Run the main script:
+
+```bash
+python src/main.py
+```
+
