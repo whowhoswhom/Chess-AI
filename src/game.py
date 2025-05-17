@@ -11,7 +11,6 @@ from square import Square
 class Game:
 
     def __init__(self):
-        self.squares = None
         self.next_player = 'white'
         self.hovered_sqr = None
         self.board = Board()
@@ -23,13 +22,12 @@ class Game:
         white_check = False
         black_check = False
 
-        for row in range(ROWS):
-            for col in range(COLS):
-                square = self.squares[row][col]
+        for row, board_row in enumerate(self.board.squares):
+            for col, square in enumerate(board_row):
                 if square.has_piece():
                     piece = square.piece
                     # Check if the piece is a King and if it's in check.
-                    if isinstance(piece, King):  # assuming you have a King class
+                    if isinstance(piece, King):
                         if self.is_square_in_danger(row, col, piece.color):
                             if piece.color == 'white':
                                 white_check = True
